@@ -1,0 +1,9 @@
+eclipse.preferences.version=1
+encoding//WebRoot/tongxunlu/error.jsp=UTF-8
+encoding//WebRoot/tongxunlu/login.html=UTF-8
+encoding//WebRoot/tongxunlu/zhuce.jsp=UTF-8
+encoding//src/SQLHelper/SQLCon.java=GBK
+encoding//src/excel/GetExcelText.java=UTF-8
+encoding//src/txlglxt/LoginAction.java=GBK
+encoding//src/txlglxt/zhuce.java=GBK
+encoding/<project>=UTF-8

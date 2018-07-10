@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC  
+        "-//Apache Struts//XWork Validator 1.0.2//EN"  
+        "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd"> 
+        <validators>
+        <field name="name">
+        <field-validator type="requiredstring">
+        <message>姓名不能为空！</message>
+        </field-validator>
+        </field>
+        <field name="tellphone">
+        <field-validator type="requiredstring">
+        <message>电话不能为空！</message>
+        </field-validator>
+        </field>
+        <field name="email">
+        <field-validator type="email">
+        <message>请使用合法的邮箱格式</message>
+        </field-validator>
+        </field>
+        <field name="fenzu">
+        <field-validator type="required">
+        <message>请选择你的分组！</message>
+        </field-validator>
+        </field>
+        </validators>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.custom.i18n.resources" value="global-msg" />
+	<constant name="struts.i18n.encoding" value="utf-8" />
+	<package name="struts2" extends="struts-default" namespace="/">
+		
+		<action name="Login" class="txlglxt.LoginAction">
+		<interceptor-ref name="defaultStack"></interceptor-ref>
+			<result name="success">/tongxunlu/welcome.jsp</result>
+			<result name="error">error.jsp</result>
+			<result name="input">login.html</result>
+		</action>
+		<action name="zhuce" class="txlglxt.zhuce">
+		<result name="success">zhuce_suc.jsp</result>
+		<result name="error">error.jsp</result>
+		<result name="input">zhuce.jsp</result>
+		</action>
+		<action name="newcontext" class="txlglxt.newcontext">
+		<result name="success" type="redirect">/tongxunlu/welcome.jsp</result>
+		<result name="input">/tongxunlu/new.jsp</result>
+		</action>
+		<action name="delete" class="txlglxt.deleteAction">
+		<result name="success" type="redirect">/tongxunlu/welcome.jsp</result>
+		</action>
+		<action name="update" class="txlglxt.updateAction">
+		<result name="success" type="redirect">/tongxunlu/welcome.jsp</result>
+		</action>
+		<action name="fileUpload" class="test.FileUploadAction">
+		<interceptor-ref name="fileUploadStack"/>
+		<result name="success">/tongxunlu/ShowUpload.jsp</result>
+		</action>
+		<action name="updatepicture" class="txlglxt.updatepicture">
+		<result name="success" type="redirect">/tongxunlu/welcome.jsp</result>
+		</action>
+		<action name="delete1" class="txlglxt.delete1Action">
+		<result name="success" >/tongxunlu/trashbin.jsp</result>
+		</action>
+		<action name="reuse" class="txlglxt.reuserAction">
+		<result name="success" type="redirect">/tongxunlu/welcome.jsp</result>
+		</action>
+		<action name="importexcel" class="excel.importCurriList1" method="aa">
+		<result name="success" type="redirect">/tongxunlu/welcome.jsp</result>
+		</action>
+		<action name="exportexcel" class="excel.exportCurriList1" method="export">
+		<result name="success" type="redirect">/tongxunlu/welcome.jsp</result>
+		</action>
+		<action name="groupserch" class="txlglxt.groupserchAction">
+		<result name="success" type="redirect">/tongxunlu/showserch.jsp</result>
+		</action>
+		</package>
+	
+</struts>
